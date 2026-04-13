@@ -46,9 +46,7 @@ def max_dd(DF):
 
 # Download historical data (monthly) for DJI constituent stocks
 
-tickers = ["MMM","AXP","T","BA","CAT","CSCO","KO", "XOM","GE","GS","HD",
-           "IBM","INTC","JNJ","JPM","MCD","MRK","MSFT","NKE","PFE","PG","TRV",
-           "UNH","VZ","V","WMT","DIS"]
+tickers = ["MSFT", "AAPL"]
 
 ohlc_mon = {} # directory with ohlc value for each stock            
 start = dt.datetime.today()-dt.timedelta(3650)
