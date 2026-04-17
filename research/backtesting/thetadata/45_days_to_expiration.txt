@@ -1,0 +1,23 @@
+Build a back testing system that simulate the trade of covered call (short call) and estimate the strategy performance (e.g. annual return, maximum drawdown)
+
+Please use thetadata v3 for fetching the required option data https://docs.thetadata.us/
+
+Strategy
+- start on the first day of the year
+- execute every order at 10:00 AM EST
+- sell a call with an expiration day of 45 and delta 0.2 at bid price
+- roll the call if any of these conditions is met at ask price
+1. the call is 21 days to expiration
+2. 50% profit earned
+- for each roll, consider a slippage of 0.01
+
+Each time you sell or buy a call, make sure you append a row of data to a file (e.g. excel file) with these columns
+1. Date
+2. Position (Buy or sell)
+3. Right (Call or Put)
+4. Price of the trade
+5. Day to expiration
+6. Change of the account
+
+Plot a line graph with the trend of SPY and indication of option trade on it.
+1. Use green cross for sell and blue cross for buy 
