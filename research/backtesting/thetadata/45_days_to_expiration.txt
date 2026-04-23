@@ -20,4 +20,4 @@ Each time you sell or buy a call, make sure you append a row of data to a file (
 6. Change of the account
 
 Plot a line graph with the trend of SPY and indication of option trade on it.
-1. Use green cross for sell and blue cross for buy 
+1. Use green cross for selling point and blue cross for buying point
